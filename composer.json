@@ -1,0 +1,22 @@
+{
+    "name": "kilte/silex-mysqli",
+    "description": "MySQLi service provider for Silex",
+    "license":     "MIT",
+    "authors": [
+        {
+            "name":  "Kilte",
+            "email": "nwotnbm@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "silex/silex": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Kilte\\MySQLi\\": "src"
+        }
+    }
+}
