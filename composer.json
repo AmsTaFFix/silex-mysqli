@@ -1,6 +1,9 @@
 {
-    "name": "kilte/silex-mysqli",
+    "name":        "kilte/silex-mysqli",
+    "type":        "library",
     "description": "MySQLi service provider for Silex",
+    "keywords":   ["silex", "mysqli", "MySQLiServiceProvider"],
+    "homepage":    "http://github.com/Kilte/silex-mysqli",
     "license":     "MIT",
     "authors": [
         {
