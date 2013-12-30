@@ -3,7 +3,7 @@
 /**
  * Part of the silex-mysqli
  *
- * @author Kilte <nwotnbm@gmail.com>
+ * @author  Kilte <nwotnbm@gmail.com>
  * @package silex-mysqli
  */
 
@@ -16,4 +16,5 @@ namespace Kilte\MySQLi\Exception;
  */
 class MySQLiException extends \Exception
 {
+
 }
