@@ -21,7 +21,7 @@ class MySQLiServiceProvider implements ServiceProviderInterface
 {
 
     /**
-     * @{inheritdoc}
+     * {@inheritdoc}
      */
     public function register(Application $app)
     {
@@ -39,7 +39,7 @@ class MySQLiServiceProvider implements ServiceProviderInterface
     }
 
     /**
-     * @{inheritdoc}
+     * {@inheritdoc}
      */
     public function boot(Application $app)
     {
