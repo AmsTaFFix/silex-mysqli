@@ -18,8 +18,8 @@
         "silex/silex": "*"
     },
     "autoload": {
-        "psr-0": {
-            "Kilte\\MySQLi\\": "src"
+        "psr-4": {
+            "Kilte\\MySQLi\\": "src/Kilte/MySQLi"
         }
     }
 }
