@@ -2,6 +2,8 @@
 
 Simple MySQLi Service provider for [Silex](http://silex.sensiolabs.org)
 
+[![Build Status](https://travis-ci.org/Kilte/silex-mysqli.svg?branch=master)](https://travis-ci.org/Kilte/silex-mysqli)
+
 ## Requirements
 
 - PHP >= 5.3.3
