@@ -27,9 +27,11 @@ class MySQLiServiceProvider implements ServiceProviderInterface
     {
         $app['mysqli'] = $app->share(
             function (Application $app) {
-                $config = isset($app['mysqli.configuration']) && is_array($app['mysqli.configuration'])
-                    ? $app['mysqli.configuration']
-                    : array();
+                if (isset($app['mysqli.configuration']) && is_array($app['mysqli.configuration'])) {
+                    $config = $app['mysqli.configuration'];
+                } else {
+                    throw new \LogicException('mysqli.configuration is not defined');
+                }
                 $MySQLi = new MySQLi($config['host'], $config['username'], $config['password'], $config['database']);
                 $MySQLi->set_charset($config['charset']);
 
