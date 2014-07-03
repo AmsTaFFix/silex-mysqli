@@ -27,7 +27,8 @@ class MySQLiServiceProviderTest extends MySQLiTestCase
      */
     private function getApplication()
     {
-        return (new Application())->register(
+        $app = new Application();
+        return $app->register(
             new MySQLiServiceProvider,
             array('mysqli.configuration' => $this->getMySQLiConfiguration())
         );
