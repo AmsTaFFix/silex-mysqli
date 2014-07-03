@@ -2,6 +2,10 @@
 
 Simple MySQLi Service provider for [Silex](http://silex.sensiolabs.org)
 
+## Requirements
+
+- PHP >= 5.3.3
+
 ## Registration
 
     $app->register(
