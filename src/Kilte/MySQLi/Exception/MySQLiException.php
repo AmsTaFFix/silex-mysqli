@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Part of the silex-mysqli
+ * Part of the SilexMySQLi
  *
- * @author  Kilte <nwotnbm@gmail.com>
- * @package silex-mysqli
+ * @author  Kilte Leichnam <nwotnbm@gmail.com>
+ * @package SilexMySQLi
  */
 
 namespace Kilte\MySQLi\Exception;
