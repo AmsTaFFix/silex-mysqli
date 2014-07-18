@@ -15,7 +15,7 @@
         "php": ">=5.3.3"
     },
     "require-dev": {
-        "silex/silex": "*",
+        "pimple/pimple": "~2.1",
         "phpunit/phpunit": "~4.1"
     },
     "autoload": {
