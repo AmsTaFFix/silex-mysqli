@@ -9,8 +9,8 @@
 
 namespace Kilte\MySQLi;
 
-use Silex\Application;
-use Silex\ServiceProviderInterface;
+use Pimple\Container;
+use Pimple\ServiceProviderInterface;
 
 /**
  * MySQLiServiceProvider Class
@@ -23,28 +23,18 @@ class MySQLiServiceProvider implements ServiceProviderInterface
     /**
      * {@inheritdoc}
      */
-    public function register(Application $app)
+    public function register(Container $app)
     {
-        $app['mysqli'] = $app->share(
-            function (Application $app) {
-                if (isset($app['mysqli.configuration']) && is_array($app['mysqli.configuration'])) {
-                    $config = $app['mysqli.configuration'];
-                } else {
-                    throw new \LogicException('mysqli.configuration is not defined');
-                }
-                $MySQLi = new MySQLi($config['host'], $config['username'], $config['password'], $config['database']);
-                $MySQLi->set_charset($config['charset']);
-
-                return $MySQLi;
+        $app['mysqli'] = function () use ($app) {
+            if (isset($app['mysqli.configuration']) && is_array($app['mysqli.configuration'])) {
+                $config = $app['mysqli.configuration'];
+            } else {
+                throw new \LogicException('mysqli.configuration is not defined');
             }
-        );
-    }
+            $MySQLi = new MySQLi($config['host'], $config['username'], $config['password'], $config['database']);
+            $MySQLi->set_charset($config['charset']);
 
-    /**
-     * {@inheritdoc}
-     */
-    public function boot(Application $app)
-    {
+            return $MySQLi;
+        };
     }
-
 }
