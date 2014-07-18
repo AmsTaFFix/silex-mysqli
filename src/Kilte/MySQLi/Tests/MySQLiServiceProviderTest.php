@@ -10,7 +10,7 @@
 namespace Kilte\MySQLi\Tests;
 
 use Kilte\MySQLi\MySQLiServiceProvider;
-use Silex\Application;
+use Pimple\Container;
 
 /**
  * Class MySQLiServiceProviderTest
@@ -25,10 +25,10 @@ class MySQLiServiceProviderTest extends MySQLiTestCase
      *
      * @return Application
      */
-    private function getApplication()
+    private function getContainer()
     {
-        $app = new Application();
-        return $app->register(
+        $container = new Container();
+        return $container->register(
             new MySQLiServiceProvider,
             array('mysqli.configuration' => $this->getMySQLiConfiguration())
         );
@@ -36,7 +36,7 @@ class MySQLiServiceProviderTest extends MySQLiTestCase
 
     public function testRegister()
     {
-        $app = $this->getApplication();
+        $app = $this->getContainer();
         $this->assertInstanceOf('\\Kilte\\MySQLi\\MySQLi', $app['mysqli']);
     }
 
