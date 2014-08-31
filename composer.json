@@ -1,8 +1,8 @@
 {
     "name":        "kilte/silex-mysqli",
     "type":        "library",
-    "description": "MySQLi service provider for Silex",
-    "keywords":   ["silex", "mysqli", "MySQLiServiceProvider"],
+    "description": "MySQLi service provider for Pimple",
+    "keywords":   ["pimple", "mysqli", "MySQLiServiceProvider"],
     "homepage":    "http://github.com/Kilte/silex-mysqli",
     "license":     "MIT",
     "authors": [
@@ -15,8 +15,8 @@
         "php": ">=5.3.3"
     },
     "require-dev": {
-        "pimple/pimple": "~2.1",
-        "phpunit/phpunit": "~4.1"
+        "pimple/pimple": "~3.0",
+        "phpunit/phpunit": "@stable"
     },
     "autoload": {
         "psr-4": {
@@ -25,7 +25,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0.x-dev"
+            "dev-master": "1.1.x-dev"
         }
     }
 }
