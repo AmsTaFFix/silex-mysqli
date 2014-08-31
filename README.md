@@ -36,8 +36,7 @@ Now the service is available as `$c['mysqli']`.
 
 This provider provides extended internal `\mysqli` class.
 
-The only difference is that `query()` method throws the `Kilte\MySQLi\Exception\MySQLiException` exception.
-
+The only difference is that `query()` method uses `MYSQLI_USE_RESULT` instead `MYSQLI_STORE_RESULT` by default.
 
 ## Tests
 
@@ -52,6 +51,7 @@ $ vendor/bin/phpunit
 
 - Making service compliant with Pimple 2.1 and Silex 2.0 (by Alexander Kudryashov)
 - Making Pimple dependency instead Silex (by Alexander Kudryashov)
+- Removed exception. Use [mysqli\_report](http://php.net/manual/en/mysqli-driver.report-mode.php) instead
 
 ### 1.0.1 \[03.07.2014\]
 
