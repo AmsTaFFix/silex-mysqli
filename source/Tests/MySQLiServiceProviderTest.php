@@ -20,24 +20,19 @@ use Pimple\Container;
 class MySQLiServiceProviderTest extends MySQLiTestCase
 {
 
-    /**
-     * Returns Container
-     *
-     * @return Container
-     */
-    private function getContainer()
-    {
-        $container = new Container();
-        return $container->register(
-            new MySQLiServiceProvider,
-            array('mysqli.configuration' => $this->getMySQLiConfiguration())
-        );
-    }
-
     public function testRegister()
     {
-        $c = $this->getContainer();
+        $c = new Container();
+        $c->register(new MySQLiServiceProvider(), array('mysqli.configuration' => $this->getMySQLiConfiguration()));
         $this->assertInstanceOf('\\Kilte\\MySQLi\\MySQLi', $c['mysqli']);
+    }
+
+    public function testConfigurationNotExists()
+    {
+        $c = new Container();
+        $c->register(new MySQLiServiceProvider());
+        $this->setExpectedException('\\LogicException', 'mysqli.configuration is not defined');
+        $c['mysqli'];
     }
 
 }
