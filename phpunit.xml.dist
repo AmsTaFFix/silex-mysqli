@@ -14,7 +14,15 @@
     </php>
     <testsuites>
         <testsuite name="MySQLi Test Suite">
-            <directory>./src/Kilte/MySQLi/Tests</directory>
+            <directory>source/Tests</directory>
         </testsuite>
     </testsuites>
+    <filter>
+        <whitelist>
+            <directory>source</directory>
+            <exclude>
+                <directory>source/Tests</directory>
+            </exclude>
+        </whitelist>
+    </filter>
 </phpunit>

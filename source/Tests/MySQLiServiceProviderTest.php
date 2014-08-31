@@ -21,9 +21,9 @@ class MySQLiServiceProviderTest extends MySQLiTestCase
 {
 
     /**
-     * Returns Silex Application
+     * Returns Container
      *
-     * @return Application
+     * @return Container
      */
     private function getContainer()
     {
@@ -36,8 +36,8 @@ class MySQLiServiceProviderTest extends MySQLiTestCase
 
     public function testRegister()
     {
-        $app = $this->getContainer();
-        $this->assertInstanceOf('\\Kilte\\MySQLi\\MySQLi', $app['mysqli']);
+        $c = $this->getContainer();
+        $this->assertInstanceOf('\\Kilte\\MySQLi\\MySQLi', $c['mysqli']);
     }
 
 }
