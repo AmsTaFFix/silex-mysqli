@@ -1,6 +1,5 @@
 <?php
 
-
 /**
  * Part of the SilexMySQLi
  *
@@ -10,7 +9,6 @@
  * @author  Kilte Leichnam <nwotnbm@gmail.com>
  * @package SilexMySQLi
  */
-
 
 namespace Kilte\MySQLi\Tests;
 

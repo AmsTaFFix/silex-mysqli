@@ -1,6 +1,5 @@
 <?php
 
-
 /**
  * Part of the SilexMySQLi
  *
