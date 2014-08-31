@@ -36,13 +36,6 @@ class MySQLiTest extends MySQLiTestCase
         return $db;
     }
 
-    public function testQueryThrowsException()
-    {
-        $db = $this->getMySQLi();
-        $this->setExpectedException('Kilte\\MySQLi\\Exception\\MySQLiException');
-        $db->query("INVALID QUERY");
-    }
-
     public function testQueryReturnsResult()
     {
         $db = $this->getMySQLi();
