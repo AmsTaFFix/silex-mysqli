@@ -16,7 +16,7 @@
     },
     "require-dev": {
         "pimple/pimple": "~3.0",
-        "phpunit/phpunit": "@stable"
+        "phpunit/phpunit": "~4.7"
     },
     "autoload": {
         "psr-4": {
