@@ -1,27 +1,22 @@
 <?php
 
 /**
- * Part of the SilexMySQLi
+ * Part of the SilexMySQLi.
  *
  * For the full copyright and license information,
  * view the LICENSE file that was distributed with this source code.
  *
  * @author  Kilte Leichnam <nwotnbm@gmail.com>
- * @package SilexMySQLi
  */
-
 namespace Kilte\MySQLi;
 
 /**
- * MySQLi Class
- *
- * @package Kilte\MySQLi
+ * MySQLi Class.
  */
 class MySQLi extends \mysqli
 {
-
     /**
-     * Run Query
+     * Run Query.
      *
      * @param string $statement SQL statement
      * @param int    $type      Result Mode MYSQLI_USE_RESULT or MYSQLI_STORE_RESULT
@@ -34,5 +29,4 @@ class MySQLi extends \mysqli
 
         return $result;
     }
-
 }

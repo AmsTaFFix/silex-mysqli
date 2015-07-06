@@ -1,28 +1,23 @@
 <?php
 
 /**
- * Part of the SilexMySQLi
+ * Part of the SilexMySQLi.
  *
  * For the full copyright and license information,
  * view the LICENSE file that was distributed with this source code.
  *
  * @author  Kilte Leichnam <nwotnbm@gmail.com>
- * @package SilexMySQLi
  */
-
 namespace Kilte\MySQLi;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 
 /**
- * MySQLiServiceProvider Class
- *
- * @package Kilte\MySQLi
+ * MySQLiServiceProvider Class.
  */
 class MySQLiServiceProvider implements ServiceProviderInterface
 {
-
     /**
      * {@inheritdoc}
      */
@@ -40,5 +35,4 @@ class MySQLiServiceProvider implements ServiceProviderInterface
             return $MySQLi;
         };
     }
-
 }
