@@ -1,5 +1,7 @@
 # MySQLiServiceProvider
 
+**This project is looking for a maintainer. Please get in touch with [nwotnbm at gmail].**
+
 MySQLi Service provider for [Pimple 3](http://github.com/fabpot/Pimple)
 
 [![Build Status](https://img.shields.io/travis/Kilte/silex-mysqli.svg?style=flat-square)](https://travis-ci.org/Kilte/silex-mysqli)
