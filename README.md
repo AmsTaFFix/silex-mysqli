@@ -4,10 +4,8 @@
 
 MySQLi Service provider for [Pimple 3](http://github.com/fabpot/Pimple)
 
-[![Build Status](https://img.shields.io/travis/Kilte/silex-mysqli.svg?style=flat-square)](https://travis-ci.org/Kilte/silex-mysqli)
 [![Downloads](https://img.shields.io/packagist/dt/kilte/silex-mysqli.svg?style=flat-square)](https://packagist.org/packages/kilte/silex-mysqli)
 [![License](https://img.shields.io/packagist/l/kilte/silex-mysqli.svg?style=flat-square)](http://opensource.org/licenses/MIT)
-[![SensioLabs Insight](https://img.shields.io/sensiolabs/i/cd3e626b-234d-4608-99e3-052e0fef19b9.svg?style=flat-square)](https://insight.sensiolabs.com/projects/cd3e626b-234d-4608-99e3-052e0fef19b9)
 
 ## Requirements
 
