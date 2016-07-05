@@ -1,14 +1,22 @@
 {
-    "name":        "kilte/silex-mysqli",
-    "type":        "library",
+    "name": "amstaffix/silex-mysqli",
+    "type": "library",
     "description": "MySQLi service provider for Pimple",
-    "keywords":   ["pimple", "mysqli", "MySQLiServiceProvider"],
-    "homepage":    "http://github.com/Kilte/silex-mysqli",
-    "license":     "MIT",
+    "keywords": [
+        "pimple",
+        "mysqli",
+        "MySQLiServiceProvider"
+    ],
+    "homepage": "http://github.com/AmsTaFFix/silex-mysqli",
+    "license": "MIT",
     "authors": [
         {
-            "name":  "Kilte",
+            "name": "Kilte",
             "email": "nwotnbm@gmail.com"
+        },
+        {
+            "name": "Nikita Sapogov",
+            "email": "amstaffix@gmail.com"
         }
     ],
     "require": {

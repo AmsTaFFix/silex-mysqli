@@ -1,11 +1,9 @@
 # MySQLiServiceProvider
 
-**This project is looking for a maintainer. Please get in touch with [nwotnbm at gmail].**
-
 MySQLi Service provider for [Pimple 3](http://github.com/fabpot/Pimple)
 
-[![Downloads](https://img.shields.io/packagist/dt/kilte/silex-mysqli.svg?style=flat-square)](https://packagist.org/packages/kilte/silex-mysqli)
-[![License](https://img.shields.io/packagist/l/kilte/silex-mysqli.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+[![Downloads](https://img.shields.io/packagist/dt/amstaffix/silex-mysqli.svg?style=flat-square)](https://packagist.org/packages/amstaffix/silex-mysqli)
+[![License](https://img.shields.io/packagist/l/amstaffix/silex-mysqli.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
 ## Requirements
 
@@ -78,7 +76,7 @@ $ vendor/bin/phpunit
 
 Do not forget merge upstream changes:
 
-    git remote add upstream https://github.com/Kilte/silex-mysqli
+    git remote add upstream https://github.com/AmsTaFFix/silex-mysqli
     git checkout master
     git pull upstream
     git push origin master
